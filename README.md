@@ -52,3 +52,7 @@ Abre [http://localhost:3000](http://localhost:3000) en el navegador.
 - `npm run build` — Genera el build de producción
 - `npm run start` — Ejecuta el build de producción
 - `npm run lint` — Ejecuta ESLint
+
+## Licencia
+
+Distribuido bajo la licencia [MIT](LICENSE).
