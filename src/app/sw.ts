@@ -8,7 +8,8 @@ declare global {
   }
 }
 
-declare const self: ServiceWorkerGlobalScope;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+declare const self: WorkerGlobalScope & typeof globalThis;
 
 const serwist = new Serwist({
   precacheEntries: self.__SW_MANIFEST,

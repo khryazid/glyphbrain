@@ -122,6 +122,55 @@ body {
   background-color: var(--color-gb-bg) !important;
 }
 
+/* ==========================================================
+   BlockNote Editor (Notion-like) Custom Theme overrides
+   ========================================================== */
+.blocknote-custom-wrapper {
+  --bn-colors-editor-background: var(--color-gb-surface);
+  --bn-colors-editor-text: var(--color-gb-text);
+  --bn-colors-menu-background: var(--color-gb-bg);
+  --bn-colors-menu-text: var(--color-gb-text);
+  --bn-colors-tooltip-background: var(--color-gb-bg);
+  --bn-colors-tooltip-text: var(--color-gb-text);
+  --bn-colors-hovered-text-background: rgba(79, 209, 197, 0.1); /* Accent with opacity */
+  --bn-colors-selected-text-background: rgba(79, 209, 197, 0.2);
+  --bn-colors-highlight-colors-text-default: var(--color-gb-text);
+  --bn-colors-highlight-colors-background-default: transparent;
+  --bn-colors-side-menu: var(--color-gb-text-muted);
+}
+.blocknote-custom-wrapper .bn-editor {
+  padding: 0 1rem;
+  min-height: 250px;
+}
+.blocknote-custom-wrapper .bn-block-content {
+  line-height: 1.6;
+}
+
+/* Typography Overrides para BlockNote (para que no sea gigante) */
+.blocknote-custom-wrapper h1 {
+  font-size: 1.6rem !important;
+  line-height: 1.3 !important;
+  margin-top: 1rem !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 700 !important;
+}
+.blocknote-custom-wrapper h2 {
+  font-size: 1.3rem !important;
+  line-height: 1.3 !important;
+  margin-top: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
+  font-weight: 600 !important;
+}
+.blocknote-custom-wrapper h3 {
+  font-size: 1.1rem !important;
+  line-height: 1.4 !important;
+  font-weight: 600 !important;
+}
+
+/* ==========================================================
+   Custom Utility Classes
+   ========================================================== */
+
 /* === Glassmorphism utility === */
 
 .glass {

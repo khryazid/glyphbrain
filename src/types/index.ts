@@ -1,5 +1,9 @@
 // === Entidades de Base de Datos ===
 
+export type TipoNodo =
+  | 'concepto' | 'proyecto' | 'persona' | 'tarea' | 'recurso'
+  | 'arquitectura' | 'feature' | 'database' | 'api' | 'bug' | 'seguridad';
+
 export interface Nota {
   id: string;
   titulo: string;
@@ -9,6 +13,12 @@ export interface Nota {
   created_at: string;
   updated_at: string;
   embedding?: number[];
+  
+  // Metadatos estilo Notion
+  tipo_nodo: TipoNodo;
+  icono?: string;
+  color_personalizado?: string;
+  propiedades: Record<string, unknown>; // Campos dinámicos (fechas, status, etc)
 }
 
 export interface Relacion {
@@ -30,6 +40,10 @@ export interface GraphNode {
   tags: string[];
   importancia: number;
   connections: number;  // grado del nodo
+  
+  // Visualización mejorada
+  tipo_nodo: TipoNodo;
+  icono?: string;
 }
 
 export interface GraphLink {
